@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_menu">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Steps Today:"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/stepsView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0/0"
+        android:gravity="center_horizontal"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/walkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:text="Start a Walk/Run"
+        android:background="#32dd32"
+        />
+    <Button
+        android:id="@+id/weeklyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:text="view weekly Snapshot"
+    />
+    <Button
+        android:id="@+id/updateGoalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:text="Update Goal"
+        />
+
+    <Button
+        android:id="@+id/showPreWalkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:text="SHOW PREVIOUS WALK"
+        />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:text="add 500 steps"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:inputType="number"
+        android:id="@+id/changedtime"
+        />
+
+    <Button
+        android:id="@+id/changeTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:text="Change time"
+        />
+
+    <Button
+        android:id="@+id/messageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Message"/>
+
+    <Button
+        android:id="@+id/monthlyGraph"
+
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:text="Monthly report"/>
+    <Button
+        android:id="@+id/addfriend"
+
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:text="friend data"/>
+
+
+
+
+</android.support.v7.widget.LinearLayoutCompat>

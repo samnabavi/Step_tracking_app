@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PersonalBest</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_strilen">strilen</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_goal_setup">GoalSetupActivity</string>
+    <string name="title_activity_plan_walk">planWalk</string>
+    <string name="title_activity_friend_list">friendList</string>
+    <string name="title_activity_monthly_graph">MonthlyGraphActivity</string>
+</resources>

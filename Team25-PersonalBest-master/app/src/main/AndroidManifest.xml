@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.charleshitchcock.personalbest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MonthlyGraphActivity"
+            android:label="@string/title_activity_monthly_graph"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".message.friendList"
+            android:label="@string/title_activity_friend_list"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- -MAIN ACTIVITY -->
+        <activity
+            android:name=".MainActivity"
+            android:label="PersonalBest"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".strilen"
+            android:label="@string/title_activity_strilen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".message.MessageActivity"
+            android:label="MessageActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GoalSetupActivity"
+            android:label="@string/title_activity_goal_setup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WeeklyGraphActivity"
+            android:label="WeeklyGraphActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".planWalk"
+            android:label="@string/title_activity_plan_walk"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".previousWalk" />
+
+        <service
+            android:name=".services.StepUpdaterService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.FakeStepUpdaterService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".message.FriendDataActivity" />
+        <activity android:name=".message.ChatList"></activity>
+    </application>
+
+</manifest>
